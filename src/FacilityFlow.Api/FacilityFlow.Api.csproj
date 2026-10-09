@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FacilityFlow.Application\FacilityFlow.Application.csproj" />
+    <ProjectReference Include="..\FacilityFlow.Infrastructure\FacilityFlow.Infrastructure.csproj" />
+    <ProjectReference Include="..\FacilityFlow.Integrations.Mock\FacilityFlow.Integrations.Mock.csproj" />
+    <ProjectReference Include="..\FacilityFlow.Integrations.Maximo\FacilityFlow.Integrations.Maximo.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:5080
+
+### TEST 1: Valid fault
+POST {{baseUrl}}/api/dev/report
+Content-Type: application/json
+
+{
+  "phone": "+97450000000",
+  "siteId": "SITE01",
+  "assetNumber": "AC-1001",
+  "description": "AC is not cooling"
+}
+
+### TEST 2: Existing duplicate
+POST {{baseUrl}}/api/dev/report
+Content-Type: application/json
+
+{
+  "phone": "+97450000000",
+  "siteId": "SITE01",
+  "assetNumber": "AC-1002",
+  "description": "AC is not cooling"
+}
+
+### TEST 3: Unauthorized technician
+POST {{baseUrl}}/api/dev/report
+Content-Type: application/json
+
+{
+  "phone": "+97459999999",
+  "siteId": "SITE01",
+  "assetNumber": "AC-1001",
+  "description": "AC is not working"
+}
+
+### TEST 4: Confirm request
+# Replace the GUID with requestId returned by Test 1
+POST {{baseUrl}}/api/dev/requests/REPLACE-WITH-REQUEST-GUID/confirm

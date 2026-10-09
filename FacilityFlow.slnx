@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FacilityFlow.Api/FacilityFlow.Api.csproj" />
+    <Project Path="src/FacilityFlow.Application/FacilityFlow.Application.csproj" />
+    <Project Path="src/FacilityFlow.Domain/FacilityFlow.Domain.csproj" />
+    <Project Path="src/FacilityFlow.Infrastructure/FacilityFlow.Infrastructure.csproj" />
+    <Project Path="src/FacilityFlow.Integrations.Maximo/FacilityFlow.Integrations.Maximo.csproj" />
+    <Project Path="src/FacilityFlow.Integrations.Mock/FacilityFlow.Integrations.Mock.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FacilityFlow.Tests/FacilityFlow.Tests.csproj" />
+  </Folder>
+</Solution>
