@@ -16,6 +16,9 @@
 
   <ItemGroup>
     <Using Include="Xunit" />
+    <ProjectReference Include="../../src/FacilityFlow.Application/FacilityFlow.Application.csproj" />
+    <ProjectReference Include="../../src/FacilityFlow.Integrations.Mock/FacilityFlow.Integrations.Mock.csproj" />
+    
   </ItemGroup>
 
 </Project>
